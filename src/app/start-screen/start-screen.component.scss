@@ -12,8 +12,28 @@
 
 .start-img-01 {
   width: 80vw;
-  height: 80vh;
+  height: auto;
 }
 
 .button01 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 35vw;
+    min-width: 300px;
+    height: auto;
+
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
 }
