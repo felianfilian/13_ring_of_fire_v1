@@ -12,9 +12,10 @@
 }
 
 .card-stack {
+  position: relative;
   img {
     position: absolute;
     width: 120px;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
   }
 }
