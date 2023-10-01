@@ -4,13 +4,28 @@
       [ngStyle]="{ 'right.px': i * 5, 'top.px': i }"
       *ngFor="let c of [1, 2, 3, 4, 5]; let i = index"
       src="/assets/img/cards/card_cover.png"
-      alt=""
     />
     <img
+      (click)="takeCard()"
       class="card-top"
       style="right: 25px"
       src="/assets/img/cards/card_cover.png"
-      alt=""
+    />
+    <img
+      (click)="takeCard()"
+      *ngIf="pickCardAnimation"
+      class="pick-card"
+      style="right: 25px"
+      src="/assets/img/cards/ace_1.png"
     />
   </div>
 </div>
+
+<button
+  mat-fab
+  color="primary"
+  class="btn-add"
+  aria-label="Example icon button with a delete icon"
+>
+  <mat-icon>add</mat-icon>
+</button>
