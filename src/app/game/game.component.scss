@@ -16,6 +16,14 @@
   img {
     position: absolute;
     width: 120px;
-    transform: translate(50%, -50%);
+  }
+}
+
+.card-top {
+  cursor: pointer;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1) translateY(-10px);
   }
 }
