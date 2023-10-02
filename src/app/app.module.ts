@@ -8,9 +8,10 @@ import { GameComponent } from './game/game.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
-  declarations: [AppComponent, StartScreenComponent, GameComponent],
+  declarations: [AppComponent, StartScreenComponent, GameComponent, PlayerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
