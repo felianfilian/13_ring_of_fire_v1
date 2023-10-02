@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { PlayerComponent } from './player/player.component';
 import { DialogAddPlayerComponent } from './dialog-add-player/dialog-add-player.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatDialogModule,
     BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
