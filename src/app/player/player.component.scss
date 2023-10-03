@@ -1,3 +1,6 @@
+$playerCol: #a8a8a8;
+$playerColActive: #fcb503;
+
 .player {
   display: flex;
   align-items: center;
@@ -7,7 +10,7 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 
-  background-color: #fcb503;
+  background-color: $playerCol;
 
   span {
     font-size: 32px;
@@ -15,9 +18,13 @@
   }
 
   img {
-    width: 100px;
+    width: 70px;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
   }
+}
+
+.player-active {
+  background-color: $playerColActive;
 }
