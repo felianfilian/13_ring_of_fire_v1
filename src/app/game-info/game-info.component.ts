@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-game-info',
@@ -48,4 +48,16 @@ export class GameInfoComponent {
         'Make a rule. Everyone needs to drink when he breaks the rule.',
     },
   ];
+
+  title = '';
+  description = '';
+  @Input() card: string = '';
+
+  ngOnChanges(): void {
+    if (this.card) {
+      let cardNumber = +this.card.split('_')[1];
+      this.title = this.cardAction[cardNumber - 1].title;
+      this.description = this.cardAction[cardNumber - 1].description;
+    }
+  }
 }
